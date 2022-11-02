@@ -59,3 +59,10 @@ body {
     font-size: large;
     cursor: pointer;
 }
+
+#result {
+    margin: 1rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-decoration: underline;
+}
