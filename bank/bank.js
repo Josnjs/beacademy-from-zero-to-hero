@@ -1,26 +1,32 @@
 //Crie um programa que receba um valor de depósito do usuário e atualize o seu saldo//
 //  Ao final exiba o valor inicial o deposito e o saldo atual//
 
-let saldo = 0;
-let saque = 0;
-function exibeSaldo(valor1, valor2) {
+let saldoInicial = 0;
+let saldoSaque = 0;
+let saldo;
 
-    saldo += valor1;
-    saque -= valor2 - valor1;
+function exibeSaldo(depositar, sacar) {
 
-    extratoDeposito = `Você fez um deposito de R$${valor1}, acumulando
-    um total de R$${saldo}.`;
+    saldoInicial += depositar;
 
-    extratoSaque = `Você sacou R$${valor2} de sua conta, ficando com saldo de R$${saque}`;
+    saldoSaque += sacar;
+
+    saldo = saldoInicial - saldoSaque;
+
+
+
 }
-exibeSaldo(200, 300);
-exibeSaldo(40, 60);
+// exibeSaldo(150, 180);
+// exibeSaldo(200, 120);
+// exibeSaldo(300, 100);
+exibeSaldo(5, 10);
+exibeSaldo(5, 20);
 
+
+console.log(saldoInicial);
+console.log(saldoSaque);
 console.log(saldo);
-console.log(saque);
 
-console.log(extratoDeposito);
-console.log(extratoSaque);
 
 
 
