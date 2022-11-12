@@ -1,8 +1,74 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap');
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Montserrat', sans-serif;
+
+}
+
+body {
+    background-color: #F1F3F4;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+    color: #9b9898;
+}
+
+.header {
+    background-color: #FFF;
+    height: auto;
+    display: flex;
+    padding: 1rem 5rem;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header .logo {
+    font-size: 30px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.header .logo a {
+    color: #000;
+}
+
+.header .list-service {
+    display: flex;
+    gap: 1rem;
+    font-weight: 400;
+    font-size: 13px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.header .list-service a {
+    color: #9b9898;
+}
+
+.header .list-member {
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+}
+
+.fa-solid {
+    color: #9b9898;
+    font-size: 20px;
+}
+
+.btn-member {
+    border: none;
+    border-radius: 16px;
+    padding: .6rem;
+    color: #9b9898;
+    background-color: #EBEBEB;
+    font-size: 13px;
+    font-family: 'roboto', sans-serif;
+    cursor: pointer;
 }
