@@ -23,11 +23,11 @@ ul {
 
 .header {
     background-color: #FFF;
-    height: auto;
     display: flex;
     padding: 1rem 5rem;
     align-items: center;
     justify-content: space-between;
+    width: 100%;
 }
 
 .header .logo {
@@ -71,4 +71,79 @@ ul {
     font-size: 13px;
     font-family: 'roboto', sans-serif;
     cursor: pointer;
+}
+
+/* ------------------------------------------------------------ */
+#check-list {
+    position: absolute;
+    opacity: 0;
+}
+
+label {
+    cursor: pointer;
+    position: relative;
+    display: block;
+    height: 16px;
+    width: 24px;
+}
+
+label span {
+    position: absolute;
+    display: block;
+    height: 4px;
+    width: 100%;
+    border-radius: 30px;
+    background-color: #9b9898;
+    transition: 0.25s ease-in-out;
+}
+
+label span:nth-child(1) {
+    top: 0;
+}
+
+label span:nth-child(2) {
+    top: 8px;
+}
+
+label span:nth-child(3) {
+    top: 16px;
+}
+
+#check-list:checked+label span:nth-child(1) {
+    transform: rotate(-45deg);
+    top: 8px;
+}
+
+#check-list:checked+label span:nth-child(2) {
+    opacity: 0;
+}
+
+#check-list:checked+label span:nth-child(3) {
+    transform: rotate(45deg);
+    top: 8px;
+}
+
+/* ------------------------------------------------------------ */
+@media screen and (max-width: 800px) {
+    .fa-ranking-star {
+        display: none;
+    }
+
+    .header .list-service {
+        display: none;
+    }
+
+    .header {
+        padding: 1.5rem 2rem;
+    }
+
+    .header .logo {
+        font-size: 24px;
+    }
+}
+
+@media screen and (min-width: 800px) {
+    .menu {
+        display: none;
+    }
 }
